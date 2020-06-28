@@ -15,7 +15,6 @@ body{
     border-radius: 10px;
     box-shadow: 3px 3px #152436;
     color: #fff;
-    text-align: center;
 }
 #form{
     margin-top: 40px;
@@ -28,5 +27,9 @@ body{
 }
 
 .text-center{
-    margin-top: 100px;
+    margin-top: 40px;
+}
+
+.text li{
+    list-style-type: none;
 }
