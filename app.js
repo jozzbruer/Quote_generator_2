@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const radioValues = document.querySelectorAll('input[name="choice"]')
     const generateBtn = document.querySelector('.btn')
+    const paragraph = document.querySelector('.text')
     let dropDwnValue = document.getElementById('list')
 
 
@@ -36,11 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
        let choice = checkSelectedValue()
     
        if (choice === 'philosophy'){
-           console.log('philosphy')
+           clear()
            generatePhilosophyQuotes()
        }
        else if (choice === 'funny'){
-           console.log('funny');
+           clear()
            generateFunnyQuotes()
        }
     })
@@ -51,6 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return dropDwnValue.value
     }
 
+    function clear(){
+        paragraph.innerHTML =''
+     }
 
     /* Verify wich dropdown list is selected */
     function checkSelectedValue(){
@@ -68,7 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let i = 0
         while (i < getDropdownvalue()){
             let randomIndex = Math.floor(Math.random() * philosophyQuotes.length)
-            console.log(`${philosophyQuotes[randomIndex]}`)
+            let h1 = document.createElement('li')
+            let q = document.createTextNode(` ${philosophyQuotes[randomIndex]}`)
+            h1.appendChild(q)
+            paragraph.appendChild(h1)
             i++
             
         }   
@@ -79,7 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let i = 0
         while (i < getDropdownvalue()){
             let randomIndex = Math.floor(Math.random() * funnyQuotes.length)
-            console.log(`${funnyQuotes[randomIndex]}`)
+            let h1 = document.createElement('li')
+            let q = document.createTextNode(` ${funnyQuotes[randomIndex]}`)
+            h1.appendChild(q)
+            paragraph.appendChild(h1)
             i++
             
         }    
