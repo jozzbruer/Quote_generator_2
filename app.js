@@ -81,30 +81,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // function generatePhilosophyQuotes(){
-    //     let i = 0
-    //     while (i < getDropdownvalue()){
-    //         let randomIndex = Math.floor(Math.random() * philosophyQuotes.length)
-    //         let h1 = document.createElement('li')
-    //         let q = document.createTextNode(` ${philosophyQuotes[randomIndex]}`)
-    //         h1.appendChild(q)
-    //         paragraph.appendChild(h1)
-    //         i++
-            
-    //     }   
-    // }
-
-    
-    // function generateFunnyQuotes(){
-    //     let i = 0
-    //     while (i < getDropdownvalue()){
-    //         let randomIndex = Math.floor(Math.random() * funnyQuotes.length)
-    //         let h1 = document.createElement('li')
-    //         let q = document.createTextNode(` ${funnyQuotes[randomIndex]}`)
-    //         h1.appendChild(q)
-    //         paragraph.appendChild(h1)
-    //         i++
-            
-    //     }    
-    // }
 })
